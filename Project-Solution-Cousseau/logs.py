@@ -5,7 +5,7 @@ from azureml.core.webservice import Webservice
 ws = Workspace.from_config()
 
 # Set with the deployment name
-name = "Best Model Deployed P2"
+name = "myservice"
 
 # load existing web service
 service = Webservice(name=name, workspace=ws)
