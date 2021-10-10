@@ -117,7 +117,8 @@
   - Download swagger.json from Model just deployed and save it in the local swagger folder
   - Start git bash from this folder, and run swagger.sh
   ![image](https://user-images.githubusercontent.com/32632731/136704369-b2f8d709-9d79-4e0b-a025-2edfe11bdbde.png)
-  - Once done, run swagger.py
+  - Once done, run serve.py
+  
   ![image](https://user-images.githubusercontent.com/32632731/136705317-b98dcbeb-b943-4bf6-9868-97889e5a243a.png)
 
   - Finally we can display swagger documentation about the deployed model:
