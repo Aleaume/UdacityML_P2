@@ -1,12 +1,30 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Udacity AZ ML Enginner Project #2 - Deploying Models & Pipelines - Q4 2021
 
-*TODO:* Write an overview to your project.
+*TODO:* This project can be followed in two parts, its goal is make use of Azure ML tools to create and deploy a best model and then pack it in a pipeline for publication.
+- Model deployment (details in Figure 1)
+  - First, it picks up a public csv file with Bankmarketing data and creates a dataset in Azure.
+  - Then an experiment is created to find the best model.
+  - After registering this model, it is deployed and can be consumed via a test python script
+  - In parallel, it uses the swagger.json file generated at deploy to visualize in a swagger page. The instance being set on a docker.
+  - Also, a benchmark scripts calls on an apache instance to test the response time and performance of the deployed model.
+  
+- Pipeline publishing (Figure 2)
+  - In the second part, we make use of the same computing cluster, to run again a similar experiment, and capture the best model.
+  - We then create a pipeline from this model and publish it.
+  - Via the jupyter notebook, we test and consume the endpoint for this pipeline.
+
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model".
+
+![image](https://user-images.githubusercontent.com/32632731/137295084-66a93581-c82c-48d2-8124-01e174666a42.png)
+Figure 1
+
+![image](https://user-images.githubusercontent.com/32632731/137294914-430b8fe0-0bf2-4140-bfe7-0b28a65dd8e4.png)
+Figure 2
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
@@ -134,9 +152,19 @@
   - Then we make sure to add those in the endpoint.py script before running it
   
   ![image](https://user-images.githubusercontent.com/32632731/136706007-e8c8a3f5-93f9-4dac-ab61-621465595a1a.png)
+  
+- Optional - Benchmark the endpoint -
+  - First we check that the Apache CLI tool is installed
+  - We then update the URI and key in the endpoint.py and run the script
+  - Last we run the benchmark.sh and check the results
 
 
 - Step #7: Create, Publish and Consume a Pipeline
+  - Changes made to original file:
+    - folder name & experiment name
+    - compute cluster name to match the existing one
+    - update the automl settings & config to match previous experiment
+    
 
 
 
