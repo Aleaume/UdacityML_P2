@@ -134,9 +134,19 @@
   - Then we make sure to add those in the endpoint.py script before running it
   
   ![image](https://user-images.githubusercontent.com/32632731/136706007-e8c8a3f5-93f9-4dac-ab61-621465595a1a.png)
+  
+- Optional - Benchmark the endpoint -
+  - First we check that the Apache CLI tool is installed
+  - We then update the URI and key in the endpoint.py and run the script
+  - Last we run the benchmark.sh and check the results
 
 
 - Step #7: Create, Publish and Consume a Pipeline
+  - Changes made to original file:
+    - folder name & experiment name
+    - compute cluster name to match the existing one
+    - update the automl settings & config to match previous experiment
+    
 
 
 
