@@ -1,9 +1,11 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 
 # Udacity AZ ML Enginner Project #2 - Deploying Models & Pipelines - Q4 2021
 
-*TODO:* This project can be followed in two parts, its goal is make use of Azure ML tools to create and deploy a best model and then pack it in a pipeline for publication.
+Requirements: 
+Open Azure ML Studio & login.
+Create a compute instance on which you will run your notebooks and scripts.
+In order for the project & scripts to run, please make sure the Folder "Project-Solution-Cousseau" is uploaded.
+
 - Model deployment (details in Figure 1)
   - First, it picks up a public csv file with Bankmarketing data and creates a dataset in Azure.
   - Then an experiment is created to find the best model.
@@ -18,7 +20,7 @@
 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model".
+
 
 ![image](https://user-images.githubusercontent.com/32632731/137295084-66a93581-c82c-48d2-8124-01e174666a42.png)
 Figure 1
@@ -27,11 +29,11 @@ Figure 1
 Figure 2
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+
 - Step #1: Environment set up => not necessary as I made use of the Udacity Lab with pre-installed tools
   - The only set-up / preparation activity was to create a compute instance (in order to run the Notebook See step #2)
   
-- Step #2 : Create and run Auto ML Experiment => achieved using azure SDK for Python, see Notebook xxx
+- Step #2 : Create and run Auto ML Experiment => achieved using azure SDK for Python, see Notebook *project_2_udacity_Cousseau.ipynb*
 
   - First step up is to retrieve the current workspace
   ```python
@@ -195,7 +197,20 @@ Figure 2
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+- The 5 min Pipeline screencast can be accessed here:
+https://youtu.be/P6am74cE-EU
+- A full version of the 1st part of the project regarding the Model can be viewed here:
+https://youtu.be/2ScCChpkOxg
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+-Quickly after understanding what was asked for this Project, I decided to try to deliver it using mostly Azure Python SDK rather that the GUI of Azure ML Studio.
+
+This has proven more challenging but more rewarding and helped me understand better some topics.
+
+Also, as I want this project to be a go-back-to resource whenever I need, I tried do have an extensive documentation of my work and each steps.
+
+This can also be seen in the extensive "bonus" video I recorded to track back every single steps.
+
+-In terms of improvement, I believe there is first an investigation to be made into the struggle to register a model and then deploy it with a ready-generated swagger info.
+Also, I believe the entry script can be significantly improved, at this time I only did use it for testing purposes.
+
