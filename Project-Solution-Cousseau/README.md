@@ -1,10 +1,13 @@
 
 # Udacity AZ ML Enginner Project #2 - Deploying Models & Pipelines - Q4 2021
 
-Requirements: 
-Open Azure ML Studio & login.
-Create a compute instance on which you will run your notebooks and scripts.
-In order for the project & scripts to run, please make sure the Folder "Project-Solution-Cousseau" is uploaded.
+## Requirements
+
+  - Open Azure ML Studio & login.
+  - Create a compute instance on which you will run your notebooks and scripts.
+  - In order for the project & scripts to run, please make sure the Folder "Project-Solution-Cousseau" is uploaded.
+  
+## Overview
 
 - Model deployment (details in Figure 1)
   - First, it picks up a public csv file with Bankmarketing data and creates a dataset in Azure.
