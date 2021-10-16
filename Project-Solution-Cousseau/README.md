@@ -155,16 +155,42 @@ Figure 2
   
 - Optional - Benchmark the endpoint -
   - First we check that the Apache CLI tool is installed
+  ![image](https://user-images.githubusercontent.com/32632731/137581361-3a4a34d8-42d7-479f-9ccb-d223f172f089.png)
+
   - We then update the URI and key in the endpoint.py and run the script
   - Last we run the benchmark.sh and check the results
+  ![image](https://user-images.githubusercontent.com/32632731/137581917-28fbb43a-e781-4316-b655-7439042afe27.png)
+  ![image](https://user-images.githubusercontent.com/32632731/137581932-4a4b1138-476f-4795-89e4-fd1bcb20a388.png)
+
 
 
 - Step #7: Create, Publish and Consume a Pipeline
   - Changes made to original file:
     - folder name & experiment name
     - compute cluster name to match the existing one
+    - dataset name
     - update the automl settings & config to match previous experiment
     
+   -Once the workspace, cluster, dataset and model have been either retrieved or created, we start by creating a pipeline & running it:
+   ![image](https://user-images.githubusercontent.com/32632731/137583065-ff86b57e-4f0f-4016-b8d9-d3b3f2ef1041.png)
+    ![image](https://user-images.githubusercontent.com/32632731/137583127-5b5ee481-bc58-4c96-a161-624c1cf6c515.png)
+
+   ![image](https://user-images.githubusercontent.com/32632731/137582814-aad62a24-f620-438c-b7ee-cb08edfad61a.png)
+   ![image](https://user-images.githubusercontent.com/32632731/137582826-d43be04c-8f63-458b-978c-aa76516ac2e6.png)
+   ![image](https://user-images.githubusercontent.com/32632731/137582842-14f109a6-9660-40cb-929d-ead75ca3c4f3.png)
+   ![image](https://user-images.githubusercontent.com/32632731/137582872-b909cc59-31fc-4fa3-915c-f049c0734674.png)
+   
+   - After downloading the results outputs, and exmining it, we retrieve the best Model, and test it:
+   ![image](https://user-images.githubusercontent.com/32632731/137582954-56babd53-0c8b-498e-a6b1-ed504d301585.png)
+
+   
+   - Last, we then publish the Pipeline and test it:
+   ![image](https://user-images.githubusercontent.com/32632731/137582967-4b6c0339-295e-4a3d-9c6c-1573bd3237cf.png)
+    ![image](https://user-images.githubusercontent.com/32632731/137583043-8ca1fa68-ba72-477c-bcb3-ff47a0a1ab65.png)
+
+
+
+
 
 
 
