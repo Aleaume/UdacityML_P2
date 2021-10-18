@@ -170,6 +170,9 @@ Figure 2
 
 
 - Step #7: Create, Publish and Consume a Pipeline
+
+From this step, the project switches to a second notebook, provided by udacity, named: "aml-pipelines-with-automated-machine-learning-step.ipynb"
+
   - Changes made to original file:
     - folder name & experiment name
     - compute cluster name to match the existing one
