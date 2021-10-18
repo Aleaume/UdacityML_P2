@@ -192,6 +192,10 @@ Figure 2
    - Last, we then publish the Pipeline and test it:
    ![image](https://user-images.githubusercontent.com/32632731/137582967-4b6c0339-295e-4a3d-9c6c-1573bd3237cf.png)
     ![image](https://user-images.githubusercontent.com/32632731/137583043-8ca1fa68-ba72-477c-bcb3-ff47a0a1ab65.png)
+    
+    - We can here see the Published Pipeline Overview showing the REST endpoint and status. ACTIVE
+    ![image](https://user-images.githubusercontent.com/32632731/137761028-78269b08-3b0d-4e18-9ce2-0f46f3b70b00.png)
+
 
 
 
@@ -201,7 +205,7 @@ Figure 2
 
 ## Screen Recording
 - The 5 min Pipeline screencast can be accessed here:
-https://youtu.be/P6am74cE-EU
+https://youtu.be/JBdv4biEUS8
 - A full version of the 1st part of the project regarding the Model can be viewed here:
 https://youtu.be/2ScCChpkOxg
 
@@ -216,4 +220,5 @@ This can also be seen in the extensive "bonus" video I recorded to track back ev
 
 -In terms of improvement, I believe there is first an investigation to be made into the struggle to register a model and then deploy it with a ready-generated swagger info.
 Also, I believe the entry script can be significantly improved, at this time I only did use it for testing purposes.
-
+ SOURCES: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-advanced-entry-script
+ 
