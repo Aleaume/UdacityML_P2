@@ -35,6 +35,8 @@ if __name__ == "__main__":
         # Allows the port to be passed in as an argument
         port = sys.argv[-1]
     else:
-        port = 9001
+        port = 8000
 
-    test(CORSRequestHandler, HTTPServer, port=port)
+    test(CORSRequestHandler, HTTPServer, port=9001)
+
+#resubmission: change back the default port to 8000 and forced the port to 9001 in the argument passed.
