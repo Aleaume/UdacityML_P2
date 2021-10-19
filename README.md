@@ -195,11 +195,8 @@ From this step, the project switches to a second notebook, provided by udacity, 
    - Last, we then publish the Pipeline and test it:
    ![image](https://user-images.githubusercontent.com/32632731/137582967-4b6c0339-295e-4a3d-9c6c-1573bd3237cf.png)
     ![image](https://user-images.githubusercontent.com/32632731/137583043-8ca1fa68-ba72-477c-bcb3-ff47a0a1ab65.png)
-    
-    - We can here see the Published Pipeline Overview showing the REST endpoint and status. ACTIVE
-    ![image](https://user-images.githubusercontent.com/32632731/137761028-78269b08-3b0d-4e18-9ce2-0f46f3b70b00.png)
-
-
+    - We can here see the Published Pipeline Overview showing the REST endpoint and status is ACTIVE.
+    ![image](https://user-images.githubusercontent.com/32632731/137854884-d7e2a423-08e2-423c-919a-3f8877203cba.png)
 
 
 
