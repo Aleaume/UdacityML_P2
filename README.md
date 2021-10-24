@@ -219,9 +219,13 @@ Also, as I want this project to be a go-back-to resource whenever I need, I trie
 This can also be seen in the extensive "bonus" video I recorded to track back every single steps.
 
 -In terms of improvement, I believe there is first an investigation to be made into the struggle to register a model and then deploy it with a ready-generated swagger info.
-Also, I believe the entry script can be significantly improved, at this time I only did use it for testing purposes.
+Also, I believe the entry script and environment settings of some sorts are holding me from being able to have it properly running when trying to deploy with the score.py script. For the purpose of this project a simple dummy script is working. This issue lies in the ability to reference a model (in order to call the predict function) from the score.py script.
+-Sources tried:
+https://knowledge.udacity.com/questions/414299
+https://knowledge.udacity.com/questions/419852
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python#registermodel
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-advanced-entry-script#load-registered-models
 
- SOURCES: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-advanced-entry-script
  
  The model itself could be also improved, we do have an acceptable first results with an accuracy ~0.918 but with fine tuning the algorithm used we could maybe reach an even better result. Also some additional preparation step could help (i.e. Normaization).
  
