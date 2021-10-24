@@ -15,14 +15,13 @@ def init():
     model = joblib.load(model_path)
 
 def run(data):
-    data = json.loads(data)
-    result = model.predict(data['data'])
-    return {'data' : result.tolist() , 'message' : 'Successfully 
-            predicted'}
+    try:
+        data = json.loads(data)
+        result = model.predict(data['data'])
+        return {'data' : result.tolist() , 'message' : 'Successfully predicted'}
    except Exception as e:
       error = str(e)
-      return {'data' : error , 'message' : 'Failed to predict 
-             '}
+      return {'data' : error , 'message' : 'Failed to predict '}
     print(f"received data {data}")
     return f"test is {test}"
 
